@@ -12,7 +12,7 @@ function BookstoreContainer() {
         <Navbar />
         <Routes>
           <Route path="/" element={<BooksList />} />
-          <Route path="/categories" element={<Categories /> } />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </Router>
     </div>
