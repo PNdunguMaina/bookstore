@@ -1,6 +1,6 @@
 import React from 'react';
 
-function InputBook(props) {
+function InputBook() {
   return (
     <form className="input-book-form">
       <input

@@ -1,7 +1,3 @@
-import React from 'react';
-
-function Book() {
-  return;
-}
+function Book() {}
 
 export default Book;
