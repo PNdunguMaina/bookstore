@@ -16,17 +16,17 @@ export default function books(state = [], action) {
       ];
 
     case REMOVE_BOOK:
-      return state.filter((book) => book.id != action.id);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
 }
 
 // Action creators
-export function addBook(book) {
-  type: ADD_BOOK, book;
-}
+export const addBook = (book) => {
+  return { type: ADD_BOOK, book };
+};
 
-export function removeBook(id) {
-  type: REMOVE_BOOK, id;
-}
+export const removeBook = (id) => {
+  return { type: REMOVE_BOOK, id };
+};
