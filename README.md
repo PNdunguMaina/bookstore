@@ -9,6 +9,7 @@
 - HTML & CSS
 - Javascript
 - React library
+- Redux library
 - Webpack
 - Babel compiler
 - npm
