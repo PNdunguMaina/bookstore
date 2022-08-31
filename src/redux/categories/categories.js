@@ -11,7 +11,7 @@ export default function categories(state = [], action) {
   }
 }
 
-// Action creators
+// Action creator
 export function checkStatus() {
   return {
     type: CHECK_STATUS,
