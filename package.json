@@ -40,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5"
+    "@testing-library/jest-dom": "^5.16.5",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.1"
   }
 }

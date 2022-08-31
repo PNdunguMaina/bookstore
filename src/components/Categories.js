@@ -5,10 +5,12 @@ import { checkStatus } from '../redux/categories/categories';
 function Categories() {
   const category = useSelector((state) => state.categories);
   const dispatch = useDispatch();
+  const showStatus = () => dispatch(checkStatus());
+
   return (
     <div>
       <h1>{category}</h1>
-      <button type="button" onClick={() => dispatch(checkStatus())}>
+      <button type="button" onClick={showStatus}>
         Check status
       </button>
     </div>
