@@ -20,22 +20,22 @@ function InputBook() {
     }
   };
   return (
-    <form className='input-book-form'>
+    <form className="input-book-form">
       <input
-        type='text'
-        className='input-title'
-        placeholder='Title'
-        name='title'
+        type="text"
+        className="input-title"
+        placeholder="Title"
+        name="title"
         onChange={newTitle}
       />
       <input
-        type='text'
-        className='input-author'
-        placeholder='Author'
-        name='author'
+        type="text"
+        className="input-author"
+        placeholder="Author"
+        name="author"
         onChange={newAuthor}
       />
-      <button type='submit' className='submit-book' onClick={addNewBook}>
+      <button type="submit" className="submit-book" onClick={addNewBook}>
         Submit
       </button>
     </form>
