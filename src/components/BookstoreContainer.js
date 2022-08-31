@@ -5,14 +5,15 @@ import Navbar from './Navbar';
 import BooksList from './BooksList';
 import Categories from './Categories';
 
+
 function BookstoreContainer() {
   return (
-    <div className="bookstore-container">
+    <div className='bookstore-container'>
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<BooksList />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path='/' element={<BooksList />} />
+          <Route path='/categories' element={<Categories />} />
         </Routes>
       </Router>
     </div>

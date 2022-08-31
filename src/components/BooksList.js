@@ -2,13 +2,14 @@ import React from 'react';
 
 // import Book from './Book';
 import InputBook from './InputBook';
+import ReduxBooks from './ReduxBooks';
 
 function BooksList() {
   return (
-    <>
-      <ul className="all-books">{/* all books are displayed here */}</ul>
+    <div>
+      <ReduxBooks />
       <InputBook />
-    </>
+    </div>
   );
 }
 
