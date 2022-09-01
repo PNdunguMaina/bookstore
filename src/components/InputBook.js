@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookApi } from '../redux/books/books';
 
 function InputBook() {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function InputBook() {
     e.preventDefault();
     const id = uuidv4();
     if (title.trim() && author.trim()) {
-      dispatch(addBook({ id, title, author }));
+      dispatch(addBookApi({ id, title, author }));
       e.target.reset();
     }
   };
@@ -26,6 +26,7 @@ function InputBook() {
         className="input-title"
         placeholder="Title"
         name="title"
+        id="title"
         onChange={newTitle}
       />
       <input
@@ -33,6 +34,7 @@ function InputBook() {
         className="input-author"
         placeholder="Author"
         name="author"
+        id="author"
         onChange={newAuthor}
       />
       <button type="submit" className="submit-book" onClick={addNewBook}>

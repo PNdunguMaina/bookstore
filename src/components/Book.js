@@ -2,16 +2,19 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookApi } from '../redux/books/books';
 
 function Book({ id, title, author }) {
   const dispatch = useDispatch();
-  const deleteBook = () => dispatch(removeBook(id));
+  const deleteBook = (id) => dispatch(removeBookApi(id));
   return (
     <div className="book-item">
-      <p className="title">{title}:</p>
-      <p className="author">{author}</p>
-      <button type="button" onClick={deleteBook}>
+      <ul>
+        <li className="title">
+          {title}: <span className="title">{author}</span>
+        </li>
+      </ul>
+      <button type="button" onClick={() => deleteBook(id)}>
         Remove
       </button>
     </div>
