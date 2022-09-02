@@ -4,7 +4,8 @@ import axios from 'axios';
 const ADD_BOOK = 'bookstore/books/ADD_BOOK ';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 const FETCH_BOOK = 'bookstore/books/FETCH_BOOK';
-export const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/NZN3g7viTLMoaPSWKfVf/books';
+export const apiUrl =
+  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/NZN3g7viTLMoaPSWKfVf/books/';
 
 // initialize state
 const initialState = [];
@@ -53,7 +54,7 @@ export const addBookApi = (book) => async (dispatch) => {
 };
 
 export const removeBookApi = (id) => async (dispatch) => {
-  await fetch(`apiUrl${id}`, {
+  await fetch(`${apiUrl}${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

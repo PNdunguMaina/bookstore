@@ -102,6 +102,7 @@ function InputBook() {
             backgroundColor: '#0290ff',
             outline: 'none',
             border: 'none',
+            cursor: 'pointer',
           }}
         >
           <span

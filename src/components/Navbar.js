@@ -6,6 +6,7 @@ function Navbar() {
   const navbarStyles = {
     display: 'flex',
     alignItems: 'baseline',
+    justifyContent: 'space-between',
     height: '5.938rem',
     margin: '0 0 2.375rem',
     padding: '1.438rem 6.188rem 1.688rem 6.25rem',
@@ -75,6 +76,41 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
+      <div
+        className="user-icon"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          borderRadius: '2em',
+          border: '1px solid #e8e8e8',
+          height: '2.813rem',
+          width: '2.813rem',
+          background: 'none',
+          cursor: 'pointer',
+        }}
+      >
+        <span
+          style={{
+            content: ' ',
+            height: '0.6rem',
+            width: '0.6rem',
+            background: '#0290ff',
+            borderRadius: '2rem',
+          }}
+        ></span>
+        <span
+          style={{
+            content: ' ',
+            height: '0.6rem',
+            width: '0.6rem',
+            background: '#0290ff',
+            borderRadius: '2em 2em 0 0',
+          }}
+        ></span>
+      </div>
     </div>
   );
 }
