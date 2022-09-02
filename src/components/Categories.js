@@ -13,7 +13,6 @@ function Categories() {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    transform: 'translateY(-25%)',
   };
 
   const categoryBtnStyles = {
@@ -29,6 +28,7 @@ function Categories() {
     fontWeight: '300',
     fontSize: '0.813rem',
     letterSpacing: '0.5px',
+    cursor: 'pointer',
   };
   return (
     <div style={categoryStyles}>

@@ -10,7 +10,8 @@ function Book({ id, title, author }) {
 
   const bookItemStyles = {
     border: '1px solid #e8e8e8',
-    margin: '2.313rem 0 6.25rem 6.75rem',
+    height: '10.625rem',
+    margin: '0.938rem 0 0.938rem 6.75rem',
     padding: '2rem 9.188rem 1.625rem 1.688rem',
     borderRadius: '4px',
     backgroundColor: 'white',
