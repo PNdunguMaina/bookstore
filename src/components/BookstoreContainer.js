@@ -7,7 +7,7 @@ import Categories from './Categories';
 
 function BookstoreContainer() {
   return (
-    <div className="bookstore-container">
+    <div className="bookstore-container" style={{ backgroundColor: '#fafafa' }}>
       <Router>
         <Navbar />
         <Routes>
